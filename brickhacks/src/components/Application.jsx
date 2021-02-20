@@ -14,7 +14,10 @@ function Application() {
       <Router>
         <div className="container">
         {user ?
-            <ProfilePage />
+            <Route exact path="/profile">
+                <ProfilePage />
+            </Route>
+            //  <ProfilePage />
           :
           <Switch>
             <Route exact path="/">
@@ -25,6 +28,9 @@ function Application() {
             </Route>
             <Route exact path="/signin">
               <SignIn /> 
+            </Route>
+            <Route exact path="/profile">
+                <ProfilePage />
             </Route>
           </Switch>
         }
