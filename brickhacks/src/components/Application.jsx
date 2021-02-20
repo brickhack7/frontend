@@ -14,10 +14,7 @@ function Application() {
       <Router>
         <div className="container">
         {user ?
-            <Route exact path="/profile">
-                <ProfilePage />
-            </Route>
-            //  <ProfilePage />
+            <ProfilePage />
           :
           <Switch>
             <Route exact path="/">

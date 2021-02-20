@@ -1,18 +1,20 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom'; 
-import {auth, generateUserDocument} from '../firebase'
+import { Link, Redirect } from 'react-router-dom'; 
+import {auth, generateUserDocument, signInWithGoogle} from '../firebase'
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [displayName, setDisplayName] = useState("");
   const [error, setError] = useState(null);
+  const [toProfile, setToProfile] = useState(false);
   
   const createUserWithEmailAndPasswordHandler = async (event, email, password) => {
     event.preventDefault();
     try{
       const {user} = await auth.createUserWithEmailAndPassword(email, password);
       generateUserDocument(user, {displayName});
+      setToProfile(true)
     }
     catch(error){
       setError('Error Signing up with email and password');
@@ -34,8 +36,14 @@ const SignUp = () => {
     }
   };
 
+  const signInWithGoogleHandler = () => {
+    signInWithGoogle()
+    setToProfile(true)
+  };
+
   return (
     <div className="mt-8">
+      {toProfile ? <Redirect to="/profile" /> : null}
       <h1 className="text-3xl mb-2 text-center font-bold">Sign Up</h1>
       <div className="border border-blue-400 mx-auto w-11/12 md:w-2/4 rounded py-8 px-4 md:px-8">
         {error !== null && (
@@ -91,9 +99,8 @@ const SignUp = () => {
         </form>
         <p className="text-center my-3">or</p>
         <button
-          className="bg-red-500 hover:bg-red-600 w-full py-2 text-white"
-        >
-          Sign In with Google
+          className="bg-red-500 hover:bg-red-600 w-full py-2 text-white" onClick={() => signInWithGoogleHandler()}>
+          Sign in with Google
         </button>
         <p className="text-center my-3">
           Already have an account?{" "}
