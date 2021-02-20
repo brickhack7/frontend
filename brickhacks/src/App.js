@@ -1,40 +1,12 @@
-import React, {Fragment, useState, useEffect} from 'react';
+import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
-
-// components
-import LandingPage from './components/LandingPage';
-import ProfilePage from './components/ProfilePage';
-import SignIn from './components/SignIn';
-import SignUp from './components/SignUp';
+import UserProvider from "./providers/UserProvider";
 
 function App() {
-  const user = null;
   return (
-    <Fragment>
-      <Router>
-        <div className="container">
-        {user ?
-            <ProfilePage />
-          :
-          <Switch>
-            {/* <Route exact path="/signup" render={ 
-              <SignUp /> 
-            }/> */}
-            <Route exact path="/">
-              <LandingPage /> 
-            </Route>
-            <Route exact path="/signup">
-              <SignUp /> 
-            </Route>
-            <Route exact path="/signup">
-              <SignIn /> 
-            </Route>
-          </Switch>
-        }
-        </div>
-      </Router>
-    </Fragment>
+    <UserProvider>
+      <Application />
+    </UserProvider>
   );
 }
 
