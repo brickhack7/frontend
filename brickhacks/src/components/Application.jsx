@@ -6,6 +6,7 @@ import LandingPage from './LandingPage';
 import ProfilePage from './ProfilePage';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
+import Explore from './Explore';
 
 function Application() {
   const user = null;
@@ -29,6 +30,15 @@ function Application() {
             <Route exact path="/profile">
                 <ProfilePage />
             </Route>
+            <Route exact path="/explore">
+                <Explore /> 
+            </Route>
+                {/* <Route exact path="/matches">
+                <Matches /> 
+                </Route>
+                <Route exact path="/messages">
+                <SignIn /> 
+                </Route> */}
           </Switch>
         }
         </div>
