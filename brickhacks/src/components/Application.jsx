@@ -1,11 +1,11 @@
-import React, {Fragment, useState, useEffect} from 'react';
+import React, {Fragment} from 'react';
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 
 // components
-import LandingPage from './components/LandingPage';
-import ProfilePage from './components/ProfilePage';
-import SignIn from './components/SignIn';
-import SignUp from './components/SignUp';
+import LandingPage from './LandingPage';
+import ProfilePage from './ProfilePage';
+import SignIn from './SignIn';
+import SignUp from './SignUp';
 
 function Application() {
   const user = null;
@@ -23,7 +23,7 @@ function Application() {
             <Route exact path="/signup">
               <SignUp /> 
             </Route>
-            <Route exact path="/signup">
+            <Route exact path="/signin">
               <SignIn /> 
             </Route>
           </Switch>
