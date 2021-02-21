@@ -13,21 +13,39 @@ const Explore = () => {
   };
 
   const [toMatches, setToMatches] = useState(false);
-  const goToMatch = (event) => {
-    event.preventDefault();
+
+  const createMatchHandler = async(loc_id) => {
+    const loc = {"loc_id": loc_id}
+    console.log('location body >>>', JSON.stringify(loc))
+    try {
+      const url = 'http://localhost:8081/discover';
+      const config = {
+        method: 'post',
+        headers: {
+          "Content-type": "application/json",
+          'Authorization': `Bearer ${localStorage.token}`
+        },
+        data: JSON.stringify(loc)
+      };
+      const response = await axios(url, config);
+      console.log(response)
+      const payload = response.data;
+      console.log(payload)
+
+    } catch (err) {
+      console.error(err.message)
+    }
     setToMatches(true);
-  };
+  }
   const [locations, setLocations] = useState([]);
 
   async function getLocations() {
-    // const user = firebase.auth().currentUser.then((user) => console.log(user)).catch((error) => console.log(error))
     console.log(localStorage.token)
     try {
-      const url = 'http://localhost:8081/discover?lat=42&long=50';
+      const url = 'http://localhost:8081/discover?lat=43.65&long=-79.4';
       const config = {
         method: 'get',
         headers: {
-          // 'Authorization': `Bearer ${firebase.auth().currentUser.getIdToken(true)}`
           'Authorization': `Bearer ${localStorage.token}`
         }
       };
@@ -35,7 +53,7 @@ const Explore = () => {
       console.log(response)
       const payload = response.data;
       console.log(payload)
-      const location_info = payload.reduce((location_info, location) => [...location_info, [location["City"], location["Distance"], location["Name"], location["ID"]]], [])
+      const location_info = payload.reduce((location_info, location) => [...location_info, [location["city"], location["distance"], location["name"], location["id"], location["image"]]], [])
       return location_info
 
     } catch (err) {
@@ -56,33 +74,31 @@ const Explore = () => {
       {toMatches ? <Redirect to="/matches" /> : null}
       <NavBar />
       <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Row>
+        {/* <Row>
           <Container>
-            <Col md=".mx-auto">
+            <Col md=".mx-auto"> */}
               {locations.map((location, index) => {
                 console.log(location)
                 return (
-                  <Carousel.Item>
-                    <div key={index}>
-                      <div class="col d-flex justify-content-center">
+                  <Carousel.Item key={index}>
+                      <div className="col d-flex justify-content-center">
                         <Card style={{ width: '18rem' }} className="mr-4">
-                          <Card.Img variant="top" src="https://2.bp.blogspot.com/-EuikTyuD3-Q/WLc0tu0lloI/AAAAAAADfXY/rz4gSl7wftYLd0MARDbV9DNvBAqwNUVqACLcB/s1600/1P1400850.JPG" />
+                          <Card.Img variant="top" src={location[4]} />
                           <Card.Body>
                             <Card.Title>{location[2]}</Card.Title>
                             <Card.Text>
-                              {location[1]}
+                              {location[0]} - {Math.round(location[1]*100)/100} km away
                             </Card.Text>
-                            <Button variant="primary" onClick={(event) => goToMatch(event)}>Let's go there!</Button>
+                            <Button variant="primary" onClick={() => createMatchHandler(location[3])}>Let's go there!</Button>
                           </Card.Body>
                         </Card>
                       </div>
-                    </div>
-                  </Carousel.Item>
+                    </Carousel.Item>
                 )
               })}
-            </Col>
+            {/* </Col>
           </Container>
-        </Row>
+        </Row> */}
       </Carousel>
     </>
   );
