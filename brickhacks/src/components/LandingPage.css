@@ -1,0 +1,1368 @@
+/* Landing Page/Onboarding */
+
+position: relative;
+width: 1440px;
+height: 4972px;
+
+background: #FFFFFF;
+
+
+/* Dg4OygVg 2 */
+
+position: absolute;
+width: 1543px;
+height: 695px;
+left: -91px;
+top: 69px;
+
+background: url(Dg4OygVg.jpg);
+
+
+/* Group */
+
+position: absolute;
+visibility: hidden;
+left: 19.44%;
+right: 19.44%;
+top: 57.62%;
+bottom: 38.89%;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+left: 19.44%;
+right: 75%;
+top: 57.62%;
+bottom: 38.89%;
+
+background: #000000;
+
+
+/* Rectangle 2.1 */
+
+position: absolute;
+left: 30.56%;
+right: 63.89%;
+top: 57.62%;
+bottom: 38.89%;
+
+background: #000000;
+
+
+/* Rectangle 2.2 */
+
+position: absolute;
+left: 41.67%;
+right: 52.78%;
+top: 57.62%;
+bottom: 38.89%;
+
+background: #000000;
+
+
+/* Rectangle 2.3 */
+
+position: absolute;
+left: 52.78%;
+right: 41.67%;
+top: 57.62%;
+bottom: 38.89%;
+
+background: #000000;
+
+
+/* Rectangle 2.4 */
+
+position: absolute;
+left: 63.89%;
+right: 30.56%;
+top: 57.62%;
+bottom: 38.89%;
+
+background: #000000;
+
+
+/* Rectangle 2.5 */
+
+position: absolute;
+left: 75%;
+right: 19.44%;
+top: 57.62%;
+bottom: 38.89%;
+
+background: #000000;
+
+
+/* Naviation Right */
+
+position: absolute;
+width: 1440px;
+height: 64px;
+left: 0px;
+top: 0px;
+
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Button Secondary */
+
+position: absolute;
+left: 87.5%;
+right: 2.78%;
+top: 18.75%;
+bottom: 18.75%;
+
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 5px;
+
+
+/* Text */
+
+position: absolute;
+height: 25px;
+left: 17px;
+right: 16px;
+top: calc(50% - 25px/2 + 0.5px);
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Links */
+
+position: absolute;
+visibility: hidden;
+width: 288px;
+height: 22px;
+left: 932px;
+top: 21px;
+
+
+
+/* Link */
+
+position: absolute;
+left: 64.72%;
+right: 31.94%;
+top: 32.81%;
+bottom: 32.81%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* Link */
+
+position: absolute;
+left: 70.28%;
+right: 26.39%;
+top: 32.81%;
+bottom: 32.81%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* Link */
+
+position: absolute;
+left: 75.83%;
+right: 20.83%;
+top: 32.81%;
+bottom: 32.81%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* Link */
+
+position: absolute;
+left: 81.39%;
+right: 15.28%;
+top: 32.81%;
+bottom: 32.81%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* Logo */
+
+position: absolute;
+left: 2.78%;
+right: 85.14%;
+top: 28.12%;
+bottom: 34.38%;
+
+font-family: Josefin Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* Hero Side Image Right */
+
+position: absolute;
+width: 1440px;
+height: 700px;
+left: 0px;
+top: 67px;
+
+background: rgba(254, 255, 255, 0.12);
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(221, 255, 255, 0.75);
+opacity: 0.75;
+
+
+/* Browser */
+
+position: absolute;
+visibility: hidden;
+width: 670px;
+height: 480px;
+left: 635px;
+top: 110px;
+
+
+
+/* Background */
+
+position: absolute;
+width: 670px;
+height: 480px;
+left: 635px;
+top: 110px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 4px;
+
+
+/* Button */
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 651px;
+top: 126px;
+
+border: 1px solid #000000;
+box-sizing: border-box;
+
+
+/* Button */
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 675px;
+top: 126px;
+
+border: 1px solid #000000;
+box-sizing: border-box;
+
+
+/* Button */
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 699px;
+top: 126px;
+
+border: 1px solid #000000;
+box-sizing: border-box;
+
+
+/* Content */
+
+position: absolute;
+width: 422px;
+height: 357px;
+left: 135px;
+top: 172px;
+
+
+
+/* Button Primary */
+
+position: absolute;
+width: 200px;
+height: 60px;
+left: 135px;
+top: 469px;
+
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+border-radius: 5px;
+
+
+/* Start free trial */
+
+position: absolute;
+height: 22px;
+left: 25px;
+right: 24px;
+top: calc(50% - 22px/2);
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Subtitle */
+
+position: absolute;
+visibility: hidden;
+width: 422px;
+height: 85px;
+left: 135px;
+top: 360px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+
+color: #000000;
+
+
+
+/* Title */
+
+position: absolute;
+visibility: hidden;
+width: 399px;
+height: 197px;
+left: 135px;
+top: 172px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 56px;
+line-height: 66px;
+
+color: #000000;
+
+
+
+/* Social Proof */
+
+position: absolute;
+width: 1440px;
+height: 268px;
+left: 0px;
+top: 764px;
+
+background: #FDFFFF;
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0.75%;
+
+background: #FDFFFF;
+
+
+/* Logos */
+
+position: absolute;
+left: 26.39%;
+right: 26.39%;
+top: 42.54%;
+bottom: 27.61%;
+
+
+
+/* Logo 06 */
+
+position: absolute;
+left: 26.39%;
+right: 68.06%;
+top: 42.54%;
+bottom: 27.61%;
+
+background: #A1F3EE;
+border-radius: 40px;
+
+
+/* Logo 05 */
+
+position: absolute;
+left: 34.72%;
+right: 59.72%;
+top: 42.54%;
+bottom: 27.61%;
+
+background: #A1F3EE;
+border-radius: 40px;
+
+
+/* Logo 04 */
+
+position: absolute;
+left: 43.06%;
+right: 51.39%;
+top: 42.54%;
+bottom: 27.61%;
+
+background: #A1F3EE;
+border-radius: 40px;
+
+
+/* Logo 03 */
+
+position: absolute;
+left: 51.39%;
+right: 43.06%;
+top: 42.54%;
+bottom: 27.61%;
+
+background: #A1F3EE;
+border-radius: 40px;
+
+
+/* Logo 02 */
+
+position: absolute;
+left: 59.72%;
+right: 34.72%;
+top: 42.54%;
+bottom: 27.61%;
+
+background: #A1F3EE;
+border-radius: 40px;
+
+
+/* Logo 01 */
+
+position: absolute;
+left: 68.06%;
+right: 26.39%;
+top: 42.54%;
+bottom: 27.61%;
+
+background: #A1F3EE;
+border-radius: 40px;
+
+
+/* Subtitle */
+
+position: absolute;
+left: 28.61%;
+right: 28.61%;
+top: 17.91%;
+bottom: 69.4%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 34px;
+/* identical to box height */
+text-align: center;
+
+color: #000000;
+
+
+
+/* Feature Quote Left */
+
+position: absolute;
+width: 1440px;
+height: 600px;
+left: 0px;
+top: 1032px;
+
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #DAFFFD;
+
+
+/* Media */
+
+position: absolute;
+left: 53.4%;
+right: 12.5%;
+top: 26.17%;
+bottom: 26.17%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 400px;
+height: 232.68px;
+left: 860px;
+top: 157px;
+
+background: #FFFFFF;
+
+
+/* Rectangle */
+
+position: absolute;
+width: 400px;
+height: 232.68px;
+left: 769px;
+top: 210.32px;
+
+background: #000000;
+
+
+/* Content */
+
+position: absolute;
+left: 16.32%;
+right: 51.04%;
+top: 28.5%;
+bottom: 28.5%;
+
+
+
+/* Ellipse */
+
+position: absolute;
+visibility: hidden;
+width: 24px;
+height: 24px;
+left: 235px;
+top: 405px;
+
+background: #FFFFFF;
+
+
+/* Dhaka Oke, Product Designer */
+
+position: absolute;
+visibility: hidden;
+width: 181px;
+height: 20px;
+left: 267px;
+top: 407px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Customer Quote */
+
+position: absolute;
+visibility: hidden;
+width: 470px;
+height: 40px;
+left: 235px;
+top: 357px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+
+/* Your Best Value Proposition */
+
+position: absolute;
+width: 422px;
+height: 38px;
+left: 235px;
+top: 171px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+
+/* Gray 1 */
+color: #333333;
+
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */
+
+position: absolute;
+width: 470px;
+height: 51px;
+left: 235px;
+top: 233px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+
+/* Gray 1 */
+color: #333333;
+
+
+/* Feature Quote Left */
+
+position: absolute;
+width: 1440px;
+height: 600px;
+left: 1px;
+top: 2232px;
+
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #DDFFFD;
+
+
+/* Media */
+
+position: absolute;
+left: 53.4%;
+right: 12.5%;
+top: 26.17%;
+bottom: 26.17%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 400px;
+height: 232.68px;
+left: 860px;
+top: 157px;
+
+background: #F2F2F2;
+
+
+/* Rectangle */
+
+position: absolute;
+width: 400px;
+height: 232.68px;
+left: 769px;
+top: 210.32px;
+
+background: #000000;
+
+
+/* Content */
+
+position: absolute;
+left: 16.32%;
+right: 51.04%;
+top: 28.5%;
+bottom: 28.5%;
+
+
+
+/* Ellipse */
+
+position: absolute;
+visibility: hidden;
+width: 24px;
+height: 24px;
+left: 235px;
+top: 405px;
+
+background: #000000;
+
+
+/* Dhaka Oke, Product Designer */
+
+position: absolute;
+visibility: hidden;
+width: 181px;
+height: 20px;
+left: 267px;
+top: 407px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* Customer Quote */
+
+position: absolute;
+visibility: hidden;
+width: 470px;
+height: 40px;
+left: 235px;
+top: 357px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+
+color: #000000;
+
+
+
+/* Your Best Value Proposition */
+
+position: absolute;
+width: 422px;
+height: 38px;
+left: 235px;
+top: 171px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */
+
+position: absolute;
+width: 470px;
+height: 102px;
+left: 235px;
+top: 233px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+
+color: #000000;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 860px;
+top: 1357px;
+
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+
+
+/* Ellipse */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 1080px;
+top: 1338px;
+
+background: #FFFFFF;
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+
+
+/* Rectangle */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 940px;
+top: 1277px;
+
+background: #FFFFFF;
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+
+
+/* Feature Quote Right */
+
+position: absolute;
+width: 1440px;
+height: 600px;
+left: 0px;
+top: 1632px;
+
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FBFFFF;
+
+
+/* Media */
+
+position: absolute;
+left: 12.08%;
+right: 53.82%;
+top: 26.17%;
+bottom: 26.17%;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 400px;
+height: 232.68px;
+left: 265px;
+top: 157px;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 400px;
+height: 232.68px;
+left: 174px;
+top: 210.32px;
+
+
+
+/* Content */
+
+position: absolute;
+left: 51.18%;
+right: 16.18%;
+top: 28.5%;
+bottom: 28.5%;
+
+
+
+/* Ellipse */
+
+position: absolute;
+visibility: hidden;
+width: 24px;
+height: 24px;
+left: 737px;
+top: 405px;
+
+background: #000000;
+
+
+/* Dhaka Oke, Product Designer */
+
+position: absolute;
+width: 0px;
+height: 20px;
+left: 769px;
+top: 407px;
+
+
+
+
+/* Customer Quote */
+
+position: absolute;
+visibility: hidden;
+width: 470px;
+height: 40px;
+left: 737px;
+top: 357px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+
+color: rgba(0, 0, 0, 0.5);
+
+
+
+/* Your Best Value Proposition */
+
+position: absolute;
+width: 422px;
+height: 75px;
+left: 737px;
+top: 171px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 37px;
+
+color: #000000;
+
+
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */
+
+position: absolute;
+width: 470px;
+height: 102px;
+left: 737px;
+top: 233px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+
+color: #000000;
+
+
+
+/* Group 2.1 */
+
+position: absolute;
+width: 400px;
+height: 247px;
+left: 205px;
+top: 1813px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 285px;
+top: 1973px;
+
+background: #000000;
+border: 2px solid #000000;
+box-sizing: border-box;
+
+
+/* Vector */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 365px;
+top: 1893px;
+
+border: 2px solid #000000;
+box-sizing: border-box;
+
+
+/* Vector */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 445px;
+top: 1973px;
+
+border: 2px solid #000000;
+box-sizing: border-box;
+transform: rotate(-90deg);
+
+
+/* Ellipse */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 285px;
+top: 1814px;
+
+border: 2px solid #000000;
+box-sizing: border-box;
+
+
+/* Ellipse */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 205px;
+top: 1973px;
+
+background: #000000;
+border: 2px solid #000000;
+box-sizing: border-box;
+
+
+/* Ellipse */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 585px;
+top: 1874px;
+
+background: #000000;
+border: 2px solid #000000;
+box-sizing: border-box;
+
+
+/* Ellipse */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 377.5px;
+top: 1980px;
+
+border: 2px solid #000000;
+box-sizing: border-box;
+
+
+/* Rectangle */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 445px;
+top: 1813px;
+
+background: #000000;
+border: 2px solid #000000;
+box-sizing: border-box;
+
+
+/* Group 2.2 */
+
+position: absolute;
+width: 240px;
+height: 247px;
+left: 228px;
+top: 2966px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 228px;
+top: 3046px;
+
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+
+
+/* Vector */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 308px;
+top: 3126px;
+
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+transform: rotate(-90deg);
+
+
+/* Ellipse */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 448px;
+top: 3027px;
+
+background: #FFFFFF;
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+
+
+/* Ellipse */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 240.5px;
+top: 3133px;
+
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+
+
+/* Rectangle */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 308px;
+top: 2966px;
+
+background: #FFFFFF;
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+
+
+/* CTA Center */
+
+position: absolute;
+width: 1440px;
+height: 500px;
+left: 0px;
+top: 2832px;
+
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #F2F2F2;
+
+
+/* Content */
+
+position: absolute;
+left: 35.35%;
+right: 35.35%;
+top: 25.8%;
+bottom: 25.6%;
+
+
+
+/* Button Primary */
+
+position: absolute;
+left: 43.06%;
+right: 43.06%;
+top: 62.4%;
+bottom: 25.6%;
+
+
+
+/* Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+border-radius: 5px;
+
+
+/* Text */
+
+position: absolute;
+height: 22px;
+left: 25px;
+right: 24px;
+top: calc(50% - 22px/2);
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Subtitle */
+
+position: absolute;
+left: 35.35%;
+right: 35.35%;
+top: 40.6%;
+bottom: 53.6%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height */
+text-align: center;
+
+color: #000000;
+
+
+
+/* Title */
+
+position: absolute;
+left: 42.01%;
+right: 41.94%;
+top: 25.8%;
+bottom: 67.4%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 34px;
+/* identical to box height */
+text-align: center;
+
+color: #000000;
+
+
+
+/* Go on an adventure with someone new */
+
+position: absolute;
+width: 699px;
+height: 143px;
+left: 121px;
+top: 361px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 56px;
+line-height: 66px;
+
+color: #000000;
+
