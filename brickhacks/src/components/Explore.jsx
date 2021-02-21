@@ -1,13 +1,47 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
+import axios from 'axios';
 import NavBar from './NavBar';
-import {Button, Card, Container, Row, Col} from 'react-bootstrap';
+import firebase from "firebase/app";
+import { Button, Card, Container, Row, Col } from 'react-bootstrap';
+// import { UserContext } from "../providers/UserProvider";
 
 const Explore = () => {
+  const [locations, setLocations] = useState([]);
+  // const user = useContext(UserContext);
+  // const { token } = user;
+
+  async function getLocations() {
+    const user = firebase.auth().currentUser.then((user) => console.log(user)).catch((error) => console.log(error))
+    try {
+      const url = 'localhost:8081/discover';
+      const config = {
+        method: 'get',
+        headers: {
+          'Authorization': `Bearer ${firebase.auth().currentUser.getIdToken(true)}`
+        }
+      };
+      const response = await axios(url, config);
+      console.log(response)
+      const payload = response.data;
+      console.log(payload)
+
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+  useEffect(() => {
+    async function fetchLocations() {
+      const locations = await getLocations();
+      setLocations(locations)
+    }
+    fetchLocations()
+  }, [])
+
   return (
     <>
-     <NavBar/>
-     <p>explore page</p>
-     
+      <NavBar />
+      <p>explore page</p>
+
 
       <Container>
         <Row>

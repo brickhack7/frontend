@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link, Redirect } from 'react-router-dom'; 
-import {auth, generateUserDocument, signInWithGoogle} from '../firebase'
+import { Link, Redirect } from 'react-router-dom';
+import { auth, signInWithGoogle } from '../firebase'
 import Button from 'react-bootstrap/Button'
 
 const SignUp = () => {
@@ -9,15 +9,15 @@ const SignUp = () => {
   const [displayName, setDisplayName] = useState("");
   const [error, setError] = useState(null);
   const [toProfile, setToProfile] = useState(false);
-  
+
   const createUserWithEmailAndPasswordHandler = async (event, email, password) => {
     event.preventDefault();
-    try{
-      const {user} = await auth.createUserWithEmailAndPassword(email, password);
-      generateUserDocument(user, {displayName});
+    try {
+      const { user } = await auth.createUserWithEmailAndPassword(email, password);
+      // generateUserDocument(user, {displayName});
       setToProfile(true)
     }
-    catch(error){
+    catch (error) {
       setError('Error Signing up with email and password');
     }
 
@@ -89,7 +89,7 @@ const SignUp = () => {
             id="userPassword"
             onChange={event => onChangeHandler(event)}
           />
-           <Button variant="primary"
+          <Button variant="primary"
             onClick={event => {
               createUserWithEmailAndPasswordHandler(event, email, password);
             }}
