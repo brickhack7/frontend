@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, {useState} from "react";
 import NavBar from './NavBar';
 import { Link, Redirect } from 'react-router-dom';
@@ -22,7 +21,6 @@ const Explore = () => {
     <>
     {toMatches ? <Redirect to="/matches" /> : null}
      <NavBar/>
-=======
 import React, { useState, useEffect, useContext } from "react";
 import axios from 'axios';
 import NavBar from './NavBar';
@@ -36,19 +34,23 @@ const Explore = () => {
   // const { token } = user;
 
   async function getLocations() {
-    const user = firebase.auth().currentUser.then((user) => console.log(user)).catch((error) => console.log(error))
+    // const user = firebase.auth().currentUser.then((user) => console.log(user)).catch((error) => console.log(error))
+    console.log(localStorage.token)
     try {
-      const url = 'localhost:8081/discover';
+      const url = 'http://localhost:8081/discover?lat=42&long=50';
       const config = {
         method: 'get',
         headers: {
-          'Authorization': `Bearer ${firebase.auth().currentUser.getIdToken(true)}`
+          // 'Authorization': `Bearer ${firebase.auth().currentUser.getIdToken(true)}`
+          'Authorization': `Bearer ${localStorage.token}`
         }
       };
       const response = await axios(url, config);
       console.log(response)
       const payload = response.data;
       console.log(payload)
+      const location_info = payload.reduce((location_info, location) => [...location_info, [location["City"], location["Distance"], location["Name"], location["ID"]]], [])
+      return location_info
 
     } catch (err) {
       console.error(err.message)
@@ -67,8 +69,8 @@ const Explore = () => {
       <NavBar />
       <p>explore page</p>
 
->>>>>>> 0b908707238686687b4c4a0dddfd4d79c9e551a0
 
+<<<<<<< HEAD
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
           <Container>
@@ -131,6 +133,31 @@ const Explore = () => {
           </Container>
         </Carousel.Item>
       </Carousel>
+=======
+      <Container>
+        <Row>
+          <Col sm={3}>
+            {locations.map((location, index) => {
+              console.log(location)
+              return (
+                <div key={index}>
+                  <Card style={{ width: '18rem' }} className="mr-4">
+                    <Card.Img variant="top" src="https://2.bp.blogspot.com/-EuikTyuD3-Q/WLc0tu0lloI/AAAAAAADfXY/rz4gSl7wftYLd0MARDbV9DNvBAqwNUVqACLcB/s1600/1P1400850.JPG" />
+                    <Card.Body>
+                      <Card.Title>{location[2]}</Card.Title>
+                      <Card.Text>
+                        {location[1]}
+                      </Card.Text>
+                      <Button variant="primary"> Go somewhere</Button>
+                    </Card.Body>
+                  </Card>
+                </div>
+              )
+            })}
+          </Col>
+        </Row>
+      </Container>
+>>>>>>> Get data from db
     </>
   );
 }

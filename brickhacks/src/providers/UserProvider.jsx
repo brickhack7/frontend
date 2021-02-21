@@ -15,7 +15,14 @@ class UserProvider extends Component {
       // let user = await generateUserDocument(userAuth);
       let user = await firebase.auth().currentUser;
       this.setState({ user });
-      console.log('user now', user)
+      firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function (idToken) {
+        console.log('idtoken', idToken)
+        localStorage.setItem("token", idToken)
+      }).catch(function (error) {
+        console.log(error)
+      });
+      user.getIdToken(true).then((token) => localStorage.setItem("token", token)).catch((error) => console.log(error))
+      // console.log('user now', user)
       // this.setState({ token });
     });
   };
