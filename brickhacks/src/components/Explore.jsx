@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {useState} from "react";
 import NavBar from './NavBar';
 import { Link, Redirect } from 'react-router-dom';
@@ -21,6 +22,52 @@ const Explore = () => {
     <>
     {toMatches ? <Redirect to="/matches" /> : null}
      <NavBar/>
+=======
+import React, { useState, useEffect, useContext } from "react";
+import axios from 'axios';
+import NavBar from './NavBar';
+import firebase from "firebase/app";
+import { Button, Card, Container, Row, Col } from 'react-bootstrap';
+// import { UserContext } from "../providers/UserProvider";
+
+const Explore = () => {
+  const [locations, setLocations] = useState([]);
+  // const user = useContext(UserContext);
+  // const { token } = user;
+
+  async function getLocations() {
+    const user = firebase.auth().currentUser.then((user) => console.log(user)).catch((error) => console.log(error))
+    try {
+      const url = 'localhost:8081/discover';
+      const config = {
+        method: 'get',
+        headers: {
+          'Authorization': `Bearer ${firebase.auth().currentUser.getIdToken(true)}`
+        }
+      };
+      const response = await axios(url, config);
+      console.log(response)
+      const payload = response.data;
+      console.log(payload)
+
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+  useEffect(() => {
+    async function fetchLocations() {
+      const locations = await getLocations();
+      setLocations(locations)
+    }
+    fetchLocations()
+  }, [])
+
+  return (
+    <>
+      <NavBar />
+      <p>explore page</p>
+
+>>>>>>> 0b908707238686687b4c4a0dddfd4d79c9e551a0
 
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>

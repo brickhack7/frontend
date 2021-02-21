@@ -1,5 +1,5 @@
-import React, {Fragment} from 'react';
-import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 // components
 import LandingPage from './LandingPage';
@@ -15,20 +15,20 @@ function Application() {
     <Fragment>
       <Router>
         <div className="container">
-        {user ?
+          {user ?
             <ProfilePage />
-          :
-          <Switch>
-            <Route exact path="/">
-              <LandingPage /> 
-            </Route>
-            <Route exact path="/signup">
-              <SignUp /> 
-            </Route>
-            <Route exact path="/signin">
-              <SignIn /> 
-            </Route>
-            <Route exact path="/profile">
+            :
+            <Switch>
+              <Route exact path="/">
+                <LandingPage />
+              </Route>
+              <Route exact path="/signup">
+                <SignUp />
+              </Route>
+              <Route exact path="/signin">
+                <SignIn />
+              </Route>
+              <Route exact path="/profile">
                 <ProfilePage />
             </Route>
             <Route exact path="/explore">
