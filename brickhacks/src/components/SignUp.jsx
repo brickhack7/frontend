@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, Redirect } from 'react-router-dom'; 
 import {auth, generateUserDocument, signInWithGoogle} from '../firebase'
+import Button from 'react-bootstrap/Button'
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -51,7 +52,7 @@ const SignUp = () => {
             {error}
           </div>
         )}
-        <form className="">
+        <form className="text-center my-3">
           <label htmlFor="displayName" className="block">
             Display Name:
           </label>
@@ -88,20 +89,20 @@ const SignUp = () => {
             id="userPassword"
             onChange={event => onChangeHandler(event)}
           />
-          <button
-            className="bg-green-400 hover:bg-green-500 w-full py-2 text-white"
+           <Button variant="primary"
             onClick={event => {
               createUserWithEmailAndPasswordHandler(event, email, password);
             }}
           >
             Sign up
-          </button>
+          </Button>
         </form>
         <p className="text-center my-3">or</p>
-        <button
-          className="bg-red-500 hover:bg-red-600 w-full py-2 text-white" onClick={() => signInWithGoogleHandler()}>
-          Sign in with Google
-        </button>
+        <div className="text-center my-3">
+          <Button variant="secondary" onClick={() => signInWithGoogleHandler()}>
+            Sign in with Google
+          </Button>
+        </div>
         <p className="text-center my-3">
           Already have an account?{" "}
           <Link to="/" className="text-blue-500 hover:text-blue-600">
